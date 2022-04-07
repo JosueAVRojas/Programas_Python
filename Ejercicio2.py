@@ -9,3 +9,5 @@ for num in numeros:
     if(num > mayor):
         mayor = num
         print("El numero mayor es: ", mayor)
+
+input()
