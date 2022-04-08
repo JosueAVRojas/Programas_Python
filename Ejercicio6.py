@@ -10,3 +10,5 @@ for i in denominaciones:
         total = cantidad // i
         print("Billetes de "+ str(i) + ": " + str(total))
         cantidad = cantidad % i
+
+input()
