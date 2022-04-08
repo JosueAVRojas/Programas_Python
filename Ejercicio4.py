@@ -8,6 +8,8 @@ varianza = 0
 sumVar = 0
 prom = 0
 
+sumVarianza = 0
+
 for num in numeros:
     suma = suma + num
     cont = cont + 1
@@ -16,12 +18,13 @@ prom = suma / cont
 for num in numeros:
     varianza = (num - prom)
     varianza = varianza ** 2
-varianza = varianza / cont
+    sumVarianza = sumVarianza + varianza
+varianza = sumVarianza / cont
 
 
 
 print("La media del vector es: ", suma / cont)
 print("La desviacion estandar del vector es: ", pow(varianza,2))
-print("Lavarianza del vector es: ", varianza)  
+print("La varianza del vector es: ", varianza)  
 
 
